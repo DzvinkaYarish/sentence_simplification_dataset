@@ -36,7 +36,6 @@ for news, refs in zip(soup.find_all('div', class_='news-excerpt'), soup.find_all
     if all(d):
         for k in range(len(d)):
             data['level%d' % (k + 1)].append(d[k])
-    i += 1
 
 
 
