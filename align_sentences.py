@@ -36,11 +36,11 @@ for lev in levels:
             for sent in res:
 
                 print()
-                if abs(len(sent[0]) - len(sent[1])) > 2:
-                    aligned_d['level%d' % lev[0]].append(sent[0])
-                    aligned_d['level%d' % lev[1]].append(sent[1])
-                    print(sent[0])
-                    print(sent[1])
+
+                aligned_d['level%d' % lev[0]].append(sent[0])
+                aligned_d['level%d' % lev[1]].append(sent[1])
+                print(sent[0])
+                print(sent[1])
             # print(len(aligned_d['level1']))
             # break
         except ValueError:
